@@ -45,7 +45,7 @@
 * Retry limit - Property will attempt to fetch the data based on the configured retry limit count.
 * Retry interval - Property for polling based on the configured milliseconds count.
 * Default retrylimit is 3 and interval is 1000ms
-* Maximum allowed retrylimit is 5  and maximum allowed interval is 30000ms (if these value are not set in connector.properties)
+* Maximum allowed retrylimit is 5  and maximum allowed interval is 30000ms (if these values are not set in connector.properties)
 
 <br/>
 
