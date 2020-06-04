@@ -10,7 +10,7 @@
 
 <br/>
 
-### kobil/kobil-cloud-pooler:1.4.0-beta.43
+### kobil/kobil-cloud-pooler:1.4.0
 **DIGEST:** sha256:3da6dd6c5a386a98af90e208fc07a5d8615a9bb21ab9d33aa220f48a9681b384
 
 ------------------------------------
