@@ -6,12 +6,12 @@
 
 
 ### kobil/kobil-cloud-connector:1.4.0
-**DIGEST:** sha256:aefa997182280123682c56dbe57cf8b3d5792c44ef26e2b94987eca19a75aa23
+**DIGEST:** sha256:be0eb174c00aac28abe53db7963ec48c86a3fe7df4a82cd2c49a0a75ef1ea9c2
 
 <br/>
 
 ### kobil/kobil-cloud-pooler:1.4.0-beta.43
-**DIGEST:** sha256:11e7721c423750e8dc0dd914e331bad9165b4ed89b5fdac15a1f1ae3226a4aaa
+**DIGEST:** sha256:3da6dd6c5a386a98af90e208fc07a5d8615a9bb21ab9d33aa220f48a9681b384
 
 ------------------------------------
 <br/>
@@ -24,7 +24,7 @@
 
 ### Improvements
 * Increased API efficiency in handling the failure events with DeadEvents API for the major functionalities (CreateTransaction, VerifyOnlineQr).
-* Users have provision to subscribe to their required events. Another interesting event is to stream the live events (Available only for New device activation)  and display it to the user.
+* Users have provision to subscribe to their required events. Another interesting feature is to stream the live events (Available only for New device activation)  and display it to the user.
 * Improvised pollforresult to accommodate callback support - If pollforresult = 'true', the callbackurl is not considered, the result of the function is returned along with the API response. If pollforresult = 'false' and a valid callbackurl is provided, the result of the function is delivered to the callbackurl, not with the API response.
 * Refined message content in the response for better readability (which does not impact the overall functionality) in these API’s - DeleteAppUpdate, EditAppVersion, AssignVersionUpdate, EditApp, CreateApp.
 * Added "ttl" optional parameter in CreateActivationCode API, this  API have an “activationNotAfter” option, which is hard to calculate the timestamp, so adding ttl in timeunit as an option in request body to calculate the “activationNotAfter”. (If “activationNotAfter” is present, then “ttl” should not be taken into account).
@@ -45,7 +45,7 @@
 * Retry limit - Property will attempt to fetch the data based on the configured retry limit count.
 * Retry interval - Property for polling based on the configured milliseconds count.
 * Default limit is 3 and interval is 1000 ms
-* Maximum allowed limit is 5  and maximum allowed interval is 30000 ms (if the value is not set in connector.properties)
+* Maximum allowed limit is 5 ms and maximum allowed interval is 30000 ms (if the value is not set in connector.properties)
 
 <br/>
 
