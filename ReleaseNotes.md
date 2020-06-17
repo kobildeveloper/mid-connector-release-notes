@@ -1,62 +1,71 @@
-## Kobil Cloud Connector v1.4.0
+## mID Connector v2.0.0-beta.204
 
 <br/>
 
 ### **Docker Download**
 
 
-### kobil/kobil-cloud-connector:1.4.0
-**DIGEST:** sha256:be0eb174c00aac28abe53db7963ec48c86a3fe7df4a82cd2c49a0a75ef1ea9c2
+### kobil/kobil-cloud-connector:2.0.0-beta.204
+**DIGEST:** sha256:6f37f2319c6dc2786e72536fa2e4c772237203d06ee10cf946cb8c73ba3eef68
 
 <br/>
 
-### kobil/kobil-cloud-pooler:1.4.0
-**DIGEST:** sha256:3da6dd6c5a386a98af90e208fc07a5d8615a9bb21ab9d33aa220f48a9681b384
+### kobil/kobil-cloud-pooler:2.0.0-beta.48
+**DIGEST:** sha256:e6366e8c51bcbbc27fe445cee4908c5c7f746add0c840eb57aa29f1769ea0bd6
 
 ------------------------------------
 <br/>
 
 ### What's new
-* GetTransactionResult: Added new feature which would be helpful for users in retrieving the latest transaction result using unique transaction ID over a period of 24 hours. This is configurable with pooler.transaction.persistenttimeout in seconds under connector.properties file. if this value is not mentioned, default time of 24 hours shall be taken into account and  alternatively, pooler.transaction.persistenttimeout = -1 disables this feature.
-* Event Controller: Monitoring the SSMS events made easier now with this new module which helps the users in retrieving the details of dead events, subscribe/unsubscribe the events.
+* Added support for 3.1.x SSMS server.
+  * "mID connector V1” supports the 2.9.x  version of SSMS 
+  * "mID connector V2” supports the 3.1.x version of SSMS
+* Added PamLockUser REST API to lock Pam users.
+* Added PamUnLockUser REST API to Unlock Pam users.
+* Branding changed from “KOBIL Cloud Connector” to “mID Connector”.
+* Updated KOBIL logo.
+* Refactored the module name based on the business context.
+
 
 <br/>
 
 ### Improvements
-* Increased API efficiency in handling the failure events with DeadEvents API for the major functionalities (CreateTransaction, VerifyOnlineQr).
-* Users have provision to subscribe to their required events. Another interesting feature is to stream the live events (Available only for New device activation)  and display it to the user.
-* Improvised pollforresult to accommodate callback support - If pollforresult = 'true', the callbackurl is not considered, the result of the function is returned along with the API response. If pollforresult = 'false' and a valid callbackurl is provided, the result of the function is delivered to the callbackurl, not with the API response.
-* Refined message content in the response for better readability (which does not impact the overall functionality) in these API’s - DeleteAppUpdate, EditAppVersion, AssignVersionUpdate, EditApp, CreateApp.
-* Added "ttl" optional parameter in CreateActivationCode API, this  API have an “activationNotAfter” option, which is hard to calculate the timestamp, so adding ttl in timeunit as an option in request body to calculate the “activationNotAfter”. (If “activationNotAfter” is present, then “ttl” should not be taken into account).
-* Added pooler callback support.
-* Broadcasting expiry of events.
-* Added new support for displaying both online and offline devices in GetUserDevices API.
+* Refined message content in the response for invalid TimeStamp (which does not impact the overall functionality) in these APIs - SetDeviceProperty, GetDeviceProperties, DeleteDeviceProperty, SetUserProperty, GetUserProperties, DeleteUserProperty, CreateGroupProperty, GetGroupProperties, DeleteGroupProperty.
+* Restricted future date for GetManagementCredentials, GetAuditingItems and GetMonitoring.
+* Added support for alphanumeric characters and special characters for “password” parameter in PamCreateUser.
+* Improvised “SetGlobalPin” to accommodate "ResetGlobalPin" functionality. When the 'pin' parameter is empty during the SetGlobalPin API call, an auto-generated pin is assigned to the user.
+* Refactored the response code, status and message used in the connector for consistency.
+* Updated the response status and message for mandatory parameters in API’s used in the connector.
+* “deviceType” is by default set to null when softwareType is set to “APP” for Apps related API's in Asm Management Controller.
+* Refined the response for transaction not found scenario in CancelTransaction API.
+* “callbackurl” is made mandatory when pollforresult is set to false for CreateTransaction API.
+* “createactivationcode” query parameter removed from request for PamCreateUser.
+
 
 <br/>
 
 ### Isolated changes
-* Fixed: Changed the response code for User creation conflict case in CreateKernalUser API.
-* Fixed: Changed the response code for Tenant activation conflict case in ActivateTenant API.
-* Fixed: Changed the response code for CreateOnlineQr and Create OfflineQr API.
+* Fixed: Changed the response code for LockUser, UnLockUser, LockDevice and UnlockDevice API’s conflict case in Asm Management Controller.
+* Fixed: Changed the response code for the `Functionality unsupported for Multi-tenant’ scenario in RenameUser API.
+
 
 <br/>
 
 ### Configuration  Changes 
-* Retry limit - Property will attempt to fetch the data based on the configured retry limit count.
-* Retry interval - Property for polling based on the configured milliseconds count.
-* Default retrylimit is 3 and interval is 1000ms
-* Maximum allowed retrylimit is 5  and maximum allowed interval is 30000ms (if these values are not set in connector.properties)
+* Improvised to handle proper functionality even when truststore is disabled in connector.properties.
 
 <br/>
 
 ### Bug Fixes
-* Fixed: Issue in SetPassword API in updating the password in SSMS.
-* Fixed: Changed the Uid response parameter key to UserID  in API’s - GetUserLogs and GetDeviceLogs.
+* Restricted sensitive data leakage in generateAuthKey on mID Connector UI Extension.
+* Fix applied to enable user registration with dev2 credentials via mID Connector UI Extension, when GetTenants and CreateTenant API's do not function.
+* Fixed error while retrieving Activation code with qr format as "MPOWER" during retrieval and secret=true during Activation code creation.
+
 
 <br/>
 
-### Deprecation
-* Callback url parameter in CreateActivationCode API. (Alternatively, use EventController. At Present, NEW DEVICE is added and made available for the user. In future, other events can be added)
+### Upgrade Changes
+* Redis (kobil_cloud_redis) should either be cleaned up or reset in order to upgrade to 2.0.0.
 
 <br/>
 
@@ -65,20 +74,25 @@
 
 <br/>
 
+### Supported
+* AWS ElasticCache supported for both clustered and standalone, without redis authentication.
+
+<br/>
+
 ### Not Supported
-* AWS ElasticCache does not work with redis.
 * Redis sentinal is not supported
 
 <br/>
 
 ### SSMS Version
 * 2.9.x supported
-* 3.x not supported
+* 3.1.x supported
+
 
 <br/>
 
 ### Tested Server
-* MultiTenant: 2.9.0.68478
+* MultiTenant: 2.9.0.68478, 3.1.2.71992
 * SingleTenant: 2.8.9.67994
 
 <br/>
@@ -88,3 +102,7 @@
 https://docs.docker.com/engine/release-notes/#19038
 * **Docker Compose 1.25.5**
 https://github.com/docker/compose/releases
+
+
+### Not Included in Package (Until final release)
+Documentation of connector.aws1.kobil.com is not included in this release. Currently documentation is in-progress stage, which will be included in our final release.
