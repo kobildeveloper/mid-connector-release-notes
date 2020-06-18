@@ -16,7 +16,7 @@
 <br/>
 
 ### Bug Fix
-* Fixed: Validation of of ssl certificates for callback url supported API’s
+* Fixed: Validation of ssl certificates for callback url supported API’s
 
 <br/>
 
