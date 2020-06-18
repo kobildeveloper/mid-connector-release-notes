@@ -16,7 +16,7 @@
 <br/>
 
 ### Bug Fix
-* Fixed: Enablement of callback for the Self-signed certificate (Private)
+* Fixed: Validation of ssl certificates for callback url supported API’s
 
 <br/>
 
