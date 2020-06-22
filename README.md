@@ -40,13 +40,14 @@
 * Refined the response for transaction not found scenario in CancelTransaction API.
 * “callbackurl” is made mandatory when pollforresult is set to false for CreateTransaction API.
 * “createactivationcode” query parameter removed from request for PamCreateUser.
-
+* Added poolerv1 and poolerv2 actuator health check.
 
 <br/>
 
 ### Isolated changes
 * Fixed: Changed the response code for LockUser, UnLockUser, LockDevice and UnlockDevice API’s conflict case in Asm Management Controller.
 * Fixed: Changed the response code for the `Functionality unsupported for Multi-tenant’ scenario in RenameUser API.
+* Refactor the AccessToken API URL from v1/system/token to authentication/token
 
 <br/>
 
