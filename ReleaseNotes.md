@@ -17,7 +17,7 @@
 <br/>
 
 ### Added
-* DeactivateTenant API support for ssms 3.x.x (DeleteTenant API in 2.x.x serves the same purpose)
+* DeactivateTenant API support for ssms 3.x.x (Existing DeleteTenant API in 2.x.x serves the same purpose)
 
 
 <br/>
