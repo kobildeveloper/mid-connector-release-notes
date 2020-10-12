@@ -1,12 +1,12 @@
 
-## mID Connector v2.0.1
+## mID Connector v2.0.2
 
 <br/>
 
 ### **Docker Download**
 
-### kobil/kobil-cloud-connector:2.0.1
-**DIGEST:** sha256:d17ae5e187a6ffe96f3b19a6fb46c1eb0191eb9077c6cd3047de214f96b22a17
+### kobil/kobil-cloud-connector:2.0.2
+**DIGEST:** sha256:08daa3404a4ed72bb79028cfdb4a1fc4166710c4f66bd0c54bcc97958a9b92fe
 
 <br/>
 
@@ -16,9 +16,15 @@
 ------------------------------------
 <br/>
 
-### What's new
-* New parameter appName has been added in CreateTransaction API, to restrict transactions to devices registered using particular app names
+### Added
+* DeactivateTenant API support for ssms 3.x.x (Existing DeleteTenant API in 2.x.x serves the same purpose)
 
+
+<br/>
+
+
+### Fixed
+* RenameUser API support for multitenant ssms 2.x.x and 3.x.x
 
 <br/>
 
