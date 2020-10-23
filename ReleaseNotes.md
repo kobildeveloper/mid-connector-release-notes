@@ -21,14 +21,10 @@
 
 
 ### Bug Fix
-* RenameUser API support for multitenant ssms 2.x.x and 3.x.x
-
-<br/>
-
-### Known issues
 * Fixed the creation of portal service when creating tenant
 
 <br/>
+
 
 ### Supported
 * AWS ElasticCache supported for both clustered and standalone, without redis authentication
