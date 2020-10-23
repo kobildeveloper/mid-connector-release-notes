@@ -1,12 +1,12 @@
 
-## mID Connector v2.0.2
+## mID Connector v2.0.3
 
 <br/>
 
 ### **Docker Download**
 
-### kobil/kobil-cloud-connector:2.0.2
-**DIGEST:** sha256:08daa3404a4ed72bb79028cfdb4a1fc4166710c4f66bd0c54bcc97958a9b92fe
+### kobil/kobil-cloud-connector:2.0.3
+**DIGEST:** sha256:5b9ee13e716746a83f97ba31f52a02a811146f96e3829690130792ea18f07360
 
 <br/>
 
@@ -23,13 +23,13 @@
 <br/>
 
 
-### Fixed
+### Bug Fix
 * RenameUser API support for multitenant ssms 2.x.x and 3.x.x
 
 <br/>
 
 ### Known issues
-* Semantic errors with downloaded swagger json
+* Fixed the creation of portal service when creating tenant
 
 <br/>
 
