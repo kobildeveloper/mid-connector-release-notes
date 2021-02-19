@@ -1,30 +1,35 @@
-
-## mID Connector v2.0.3
+## mID Connector v2.0.4
 
 <br/>
 
 ### **Docker Download**
 
-### kobil/kobil-cloud-connector:2.0.3
-**DIGEST:** sha256:5b9ee13e716746a83f97ba31f52a02a811146f96e3829690130792ea18f07360
+### kobil/kobil-cloud-connector:2.0.4
+**DIGEST:** sha256:a48845a090c9b2e56bed8b01322dcdef2f8b6bc989cb3e1acf3f3c6e7178334e
 
 <br/>
 
-### kobil/kobil-cloud-pooler:2.0.0
-**DIGEST:** sha256:580f217dc5fc860050756d3c54ade34ef4f9418082f5d32e7187ba142944b24d
+### kobil/kobil-cloud-pooler:2.0.2
+**DIGEST:** sha256:6723a2a830ceb22b920218364d35146bdc16cf129cbc806bee8a30c2d9d16d6f
 
 ------------------------------------
 <br/>
 
 
+
 <br/>
 
+### What's new
+* Added new request body parameter callBackHeaders in create transaction api, HashMap<String, String> to send header parameters for the given callback URL and this parameter is optional
+ 
+ 
 
 ### Bug Fix
-* Fixed the creation of portal service when creating tenant
+* Fixed multiple callbacks for device activation cluster issue.
 
 <br/>
 
+<br/>
 
 ### Supported
 * AWS ElasticCache supported for both clustered and standalone, without redis authentication
@@ -54,4 +59,5 @@
 https://docs.docker.com/engine/release-notes/#19038
 * **Docker Compose 1.25.5**
 https://github.com/docker/compose/releases
+
 
