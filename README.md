@@ -60,5 +60,3 @@
 https://docs.docker.com/engine/release-notes/19.03/
 * **Docker Compose 1.28.6**
 https://github.com/docker/compose/releases/tag/1.28.6
-
-
