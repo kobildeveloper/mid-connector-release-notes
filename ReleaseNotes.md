@@ -26,6 +26,7 @@
 
 ### Changed
 * ASM Service: PropertyType should support any one of the enum types (BYTE_ARRAY, INTEGER, STRING, BOOLEAN and DATE) and retreives the same with GetProperty response
+* Java 11 (Image used in docker - adoptopenjdk/openjdk11:jre-11.0.6_10-alpine)
 
 <br/>
 
@@ -56,8 +57,8 @@
 
 ### Dependencies
 * **Docker Engine 19.03.8**
-https://docs.docker.com/engine/release-notes/#19038
-* **Docker Compose 1.25.5**
-https://github.com/docker/compose/releases
+https://docs.docker.com/engine/release-notes/19.03/
+* **Docker Compose 1.28.6**
+https://github.com/docker/compose/releases/tag/1.28.6
 
 
