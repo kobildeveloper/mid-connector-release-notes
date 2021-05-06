@@ -20,7 +20,7 @@
 <br/>
 
 ### Added
-* ASM Management: GetUserDevice - userID retrieval in the response (Note - this will not be supported for the SSMS version which are less than 3.x.x)
+* ASM Management: GetUserDevice , GetUserDevices when query param "responsetype" is set as ALL  - userID retrieval in the response (Note - this will not be supported for the SSMS version which are less than 3.x.x)
  
  
 
@@ -60,5 +60,3 @@
 https://docs.docker.com/engine/release-notes/19.03/
 * **Docker Compose 1.28.6**
 https://github.com/docker/compose/releases/tag/1.28.6
-
-
