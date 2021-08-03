@@ -20,6 +20,8 @@ kobilsystems.azurecr.io/idp/ssms-connector:2.2.0
 ### kobil/kobil-cloud-pooler:2.2.0
 **DIGEST:** sha256:cb74a5f71e64dbe62da6bdee91ae18185547e5bbc8e7a26ad3e416554d8df5bc
 
+<br/>
+
 ------------------------------------
 <br/>
 
