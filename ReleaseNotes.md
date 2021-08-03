@@ -35,6 +35,7 @@ kobilsystems.azurecr.io/idp/ssms-connector:2.2.0
 * Redis sentinal is not supported
 
 <br/>
+<br/>
 
 ### Kobil Core Version
 * 2.1.0
