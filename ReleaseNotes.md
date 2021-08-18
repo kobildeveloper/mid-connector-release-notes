@@ -27,12 +27,6 @@
 ### Bug Fix
 * Fixed multiple callbacks for device activation cluster issue.
 
-<br/>
-
-<br/>
-
-### Supported
-* AWS ElasticCache supported for both clustered and standalone, without redis authentication
 
 <br/>
 
