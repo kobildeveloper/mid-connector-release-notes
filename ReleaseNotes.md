@@ -31,10 +31,6 @@
 ### Known issues
 * Semantic errors with downloaded swagger json
 
-<br/>
-
-### Supported
-* AWS ElasticCache supported for both clustered and standalone, without redis authentication
 
 <br/>
 
