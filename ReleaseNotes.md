@@ -32,11 +32,6 @@
 
 <br/>
 
-### Supported
-* AWS ElasticCache supported for both clustered and standalone, without redis authentication
-
-<br/>
-
 ### Not Supported
 * Redis sentinal is not supported
 
