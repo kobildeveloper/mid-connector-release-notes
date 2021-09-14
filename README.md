@@ -50,6 +50,7 @@ Pooler:
   
 ### Fixed
 * Fixed Elasticache TLS issue
+* Fixed SLF4J missing dependency issue
   
 <br/>
   
