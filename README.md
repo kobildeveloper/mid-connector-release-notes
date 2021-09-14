@@ -42,13 +42,14 @@ Pooler:
 - Environment Variables:
   - Env Added:
     - ENABLE_REDIS_SSL=true (true for aws redis and false for normal redis)
-    - Env Changed: DISABLE_CALLBACK_SSL=true (Changed from DISABLE_SSL)
+  - Env Changed: 
+    - DISABLE_CALLBACK_SSL=true (Changed from DISABLE_SSL)
     - REDIS_CLUSTER_MODE=false
     - REDIS_HOST=host:port (Replace your AWS Elasticache host here)
     - REDIS_PWD=password (Replace your AWS Elasticache password here)           
   
 ### Fixed
-* Fixed elastic cache issue
+* Fixed Elasticache TLS issue
   
 <br/>
   
@@ -67,7 +68,7 @@ Pooler:
 <br/>
 
 ### Tested Server
-* MultiTenant: 2.9.0.68478 and 3.1.2.71992 
+* MultiTenant: 2.9.0.68478, 3.1.2.71992, 3.4.1.75470 and 3.5.2.79434
 * SingleTenant: 2.8.11.76074
 <br/>
 
