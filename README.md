@@ -6,25 +6,23 @@
 
 ### **Docker Download**
 
-### kobil/kobil-cloud-connector:2.3.0
+### kobil/kobil-cloud-connector:2.3.0  
 **DIGEST:** sha256:c494d8b382f3fb51cc17866c56ac8962febcf4a0ea90db703f15fdb73cbd32bb
+### kobil/kobil-cloud-pooler:2.3.0
+**DIGEST:** sha256:b91e0815a8962444a7275c2f85f9d3d166d192fc75e1d8e9087cc41ce41e68e0
 
 <br/>
 
 ### **Azurecr Download**
-kobilsystems.azurecr.io/idp/ssms-connector:2.3.0
-<br/>
-
-### kobil/kobil-cloud-pooler:2.3.0
-**DIGEST:** sha256:b91e0815a8962444a7275c2f85f9d3d166d192fc75e1d8e9087cc41ce41e68e0
+**Connector:** kobilsystems.azurecr.io/idp/ssms-connector:2.3.0  
+**Pooler:** kobilsystems.azurecr.io/idp/ssms-pooler:2.3.0
 <br/>
 
 ------------------------------------
-<br/>
 
 ### Added
 * Monitoring SSMS device deletion events is made easier with the new DEVICE_DELETION event, added to the event subscription API.
-* Supported Amazon Elasticache.
+* Supports Amazon Elasticache.
 
 <br/>
 
@@ -37,8 +35,8 @@ Connector:
   - Env Changed: 
     - DISABLE_CALLBACK_SSL=true (Changed from DISABLE_SSL)
     - REDIS_CLUSTER_MODE=false
-    - REDIS_HOST=<elasticache-aws-host:port>
-    - REDIS_PWD=<elasticache-aws-password>           
+    - REDIS_HOST=host:port (Replace your AWS Elasticache host here)
+    - REDIS_PWD=password (Replace your AWS Elasticache password here)           
   
 Pooler:
 - Environment Variables:
@@ -46,8 +44,8 @@ Pooler:
     - ENABLE_REDIS_SSL=true (true for aws redis and false for normal redis)
     - Env Changed: DISABLE_CALLBACK_SSL=true (Changed from DISABLE_SSL)
     - REDIS_CLUSTER_MODE=false
-    - REDIS_HOST=<elasticache-aws-host:port>
-    - REDIS_PWD=<elasticache-aws-password>
+    - REDIS_HOST=host:port (Replace your AWS Elasticache host here)
+    - REDIS_PWD=password (Replace your AWS Elasticache password here)           
   
 ### Fixed
 * Fixed elastic cache issue
