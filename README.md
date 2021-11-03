@@ -7,15 +7,15 @@
 ### **Docker Download**
 
 ### kobil/kobil-cloud-connector:2.3.1  
-**DIGEST:** 
-### kobil/kobil-cloud-pooler:2.3.1
-**DIGEST:** 
+**DIGEST:** sha256:d53959d11ec03931df71c0f981039895f2c29d18c64338462902f72eca325cb0
+### kobil/kobil-cloud-pooler:2.3.0
+**DIGEST:** sha256:b91e0815a8962444a7275c2f85f9d3d166d192fc75e1d8e9087cc41ce41e68e0
 
 <br/>
 
 ### **Azurecr Download**
 **Connector:** kobilsystems.azurecr.io/idp/ssms-connector:2.3.1  
-**Pooler:** kobilsystems.azurecr.io/idp/ssms-pooler:2.3.1
+**Pooler:** kobilsystems.azurecr.io/idp/ssms-pooler:2.3.0
 <br/>
 
 ------------------------------------
@@ -23,6 +23,9 @@
 ### Changed
 * Support is added to obtain SHA1 Hash value of Event ID and store in DB for Event Subscription API to reduce key size.
 * Connector Client plugins have been released for V1 and V2.
+
+### Known Issue
+* Event unsubscribe API response message for DEVICE_DELETION eventID need to be changed.
   
 <br/>
   
