@@ -9,7 +9,7 @@
 ### kobil/kobil-cloud-connector:2.4.0
 **DIGEST:**  sha256:cc91080bb2388d408ebb556ef06e8bab831eb48c8868f489eb712113352d4ebc
 ### kobil/kobil-cloud-pooler:2.4.0
-**DIGEST:** digest: sha256:288d54293b6ebb1b0b54fa9fc7378e60d75476d61a18ce8293830da041ffd656
+**DIGEST:** sha256:288d54293b6ebb1b0b54fa9fc7378e60d75476d61a18ce8293830da041ffd656
 
 <br/>
 
