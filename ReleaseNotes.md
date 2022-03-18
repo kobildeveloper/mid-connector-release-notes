@@ -24,8 +24,11 @@
 * RemoveGlobalPin API - Added a new REST API in ASM management controller to remove the global pin for a user. 
 * VerifyOnlineQrNonceResult API – Added a new REST API in ASM service controller to check the nonce login status and additionally get qrValue. It states whether the QR has been scanned and verified successfully or whether the request has been timed out. 
 * Dependencies Added in mID connector: 
+
             - springdoc-openapi-ui: 1.6.6 
+
 * Dependencies Added in KOBIL UI Extension: 
+
             - netty-codec-http: 4.1.72.Final 
             - netty-codec: 4.1.72.Final 
             - httpmime: 4.5.13 
@@ -33,6 +36,7 @@
   
  ### Fixes
  * GetDeadEvent API:  
+
             - Scenario fixed: Incorrect/Missing Event Id request 
               Previous: Response code: 400, Status: GENERAL_ERROR 
               Current: Response Code: 404, Status: NOT_FOUND 
@@ -42,6 +46,7 @@
  
 ### Changed 
 * Upgraded version 
+
             - spring boot version: Old - 2.2.6.RELEASE; Current - 2.6.3 
             - Gradle version to v7.4 
             - JDK version from 1.8 to 17 (Compatible with Java 11 too) 
@@ -52,6 +57,7 @@
 Image: "adoptopenjdk/openjdk11:jre-11.0.11_9-alpine" -> Image: "openjdk:17.0-jdk-oracle" 
 * Upgraded all dependencies to the latest stable version for fixing vulnerabilities. 
 *Upgraded dependencies: 
+
             - sfm-csv: Old - 3.11; Current - 8.2.3 
             - lombok: Old - 1.18.10; Current - 1.18.22 
             - kotlin-stdlib: Old - 1.3.10; Current - 1.6.10 
@@ -72,7 +78,9 @@ Image: "adoptopenjdk/openjdk11:jre-11.0.11_9-alpine" -> Image: "openjdk:17.0-jdk
             - netty-handler: Old - 4.1.46.Final; Current - 4.1.72.Final 
             - guava: Old - 30.0-jre; Current - 31.0.1-jre 
             - hibernate-validator: Old - 6.0.20.FInal; Current - 7.0.2.Fina 
+
 * The dependencies in the KOBIL UI Extenstion that are updated to the latest versions are mentioned below: 
+
             - aws-java-sdk-bom: Old - 1.11.228; Current - 1.12.131 
             - aws-java-sdk: Old - 1.11.381; Current - 1.12.131 
             - lombok: Old - 1.18.10; Current - 1.18.22 
@@ -84,11 +92,15 @@ Image: "adoptopenjdk/openjdk11:jre-11.0.11_9-alpine" -> Image: "openjdk:17.0-jdk
             - jedis: Old - 3.2.0; Current: - 3.7.1 
 
 ### Deprecated 
+
 * Dependencies removed in mIDConnector: 
+
             - springfox-swagger2: 2.9.2 
             - springfox-swagger-ui: 2.9.2 
             - slf4j-nop: 1.7.30 
+
 * Dependencies removed in KOBIL UI Extension: 
+
             - nimbus-jose-jwt: 9.11 
             - httpclient: 4.5 
             - httpcore: 4.4.1 
