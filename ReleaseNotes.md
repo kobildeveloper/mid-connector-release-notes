@@ -113,7 +113,7 @@ Connector Client plugins: 2.4.0_v1, 2.4.0_v2
 * MultiTenant: 3.4.1.75470 , 3.5.2.79434 and 3.6.1.81437 
 * SingleTenant: 2.8.11.76074 
 
-###Note: 
+### Note
 
 * The vulnerabilities are fixed for all the dependencies of Connector. However, there are vulnerabilities in the base image of java that will be addressed in future releases. 
 
