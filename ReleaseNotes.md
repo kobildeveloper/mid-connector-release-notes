@@ -112,12 +112,12 @@ Image: "adoptopenjdk/openjdk11:jre-11.0.11_9-alpine" -> Image: "openjdk:17.0-jdk
 Connector Client plugins: 2.4.0_v1, 2.4.0_v2 
  
 ### SSMS Version 
-2.x.x supported 
-3.x.x supported 
+* 2.x.x supported 
+* 3.x.x supported 
 
 ### Tested Server 
-MultiTenant: 3.4.1.75470 , 3.5.2.79434 and 3.6.1.81437 
-SingleTenant: 2.8.11.76074 
+* MultiTenant: 3.4.1.75470 , 3.5.2.79434 and 3.6.1.81437 
+* SingleTenant: 2.8.11.76074 
 
 ###Note: 
 
