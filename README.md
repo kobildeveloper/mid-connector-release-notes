@@ -33,10 +33,10 @@
             - netty-codec: 4.1.72.Final 
             - httpmime: 4.5.13 
             - saaj-impl: 1.5.3 
+            - swagger-annotations: 2.1.2
   
- ### Fixes
+ ### Fixed
  * GetDeadEvent API:  
-
             - Scenario fixed: Incorrect/Missing Event Id request 
               Previous: Response code: 400, Status: GENERAL_ERROR 
               Current: Response Code: 404, Status: NOT_FOUND 
@@ -46,7 +46,6 @@
  
 ### Changed 
 * Upgraded version 
-
             - spring boot version: Old - 2.2.6.RELEASE; Current - 2.6.3 
             - Gradle version to v7.4 
             - JDK version from 1.8 to 17 (Compatible with Java 11 too) 
