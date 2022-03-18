@@ -79,7 +79,7 @@ Image: "adoptopenjdk/openjdk11:jre-11.0.11_9-alpine" -> Image: "openjdk:17.0-jdk
             - guava: Old - 30.0-jre; Current - 31.0.1-jre 
             - hibernate-validator: Old - 6.0.20.FInal; Current - 7.0.2.Fina 
 
-* The dependencies in the KOBIL UI Extenstion that are updated to the latest versions are mentioned below: 
+* The dependencies in the KOBIL UI Extension that are updated to the latest versions are mentioned below: 
 
             - aws-java-sdk-bom: Old - 1.11.228; Current - 1.12.131 
             - aws-java-sdk: Old - 1.11.381; Current - 1.12.131 
