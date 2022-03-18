@@ -1,4 +1,4 @@
-## mID Connector v2.3.2
+## mID Connector v2.4.0
 
 <br/>
 
