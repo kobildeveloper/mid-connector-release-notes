@@ -121,7 +121,7 @@ SingleTenant: 2.8.11.76074
 
 ###Note: 
 
-* The vulnerabilities are fixed for all the dependencies. However, there are vulnerabilities in the base image of java that will be addressed in future releases. 
+* The vulnerabilities are fixed for all the dependencies of Connector. However, there are vulnerabilities in the base image of java that will be addressed in future releases. 
 
 * Before every deployment, Redis data should be cleared and restarted. 
 
