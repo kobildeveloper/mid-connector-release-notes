@@ -48,7 +48,7 @@
   - Gradle version to v7.4 
   - JDK version from 1.8 to 17 (Compatible with Java 11 too) 
   - Swagger version from 2.0 to 3.0 (Open API) 
-  - Removed rt.jar and replaced it with dependencies. 
+  - Removed rt.jar and replaced it with dependencies.
 
 * Upgraded base image in Docker file 
 Image: "adoptopenjdk/openjdk11:jre-11.0.11_9-alpine" -> Image: "openjdk:17.0-jdk-oracle" 
