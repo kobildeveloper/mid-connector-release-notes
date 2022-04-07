@@ -2,14 +2,14 @@
 
 <br/>
 
-**Date** 2022-04-06
+**Date** 2022-04-07
 
 ### **Docker Download**
 
 ### kobil/kobil-cloud-connector:2.4.1
-**DIGEST:**  
+**DIGEST:** sha256:0f932d853ce7715f898d72dcc29b550fd5c3537d0dba857d4d6d5727412d5931 
 ### kobil/kobil-cloud-pooler:2.4.1
-**DIGEST:** 
+**DIGEST:** sha256:73d25ac006c1ae07bee2744d1a45d15be07c276732a39d47ba25119fd49dd86
 
 <br/>
 
@@ -21,14 +21,16 @@
 ------------------------------------
  
 ### Changed 
-* Upgraded version of  
-   - Spring boot version: Old - 2.6.3; Current - 2.6.6 
-   - jackson-databind: Old - 2.12.5; Current - 2.13.2.1  
+* Dependencies updated in mIDConnector: 
+ - Spring boot version: Old - 2.6.3; Current - 2.6.6 
+ - jackson-databind: Old - 2.12.5; Current - 2.13.2.1 
+* Dependencies updated in KOBIL UI Extension: 
+ - Spring boot version: Old - 2.6.3; Current - 2.6.6 
 
-### Kobil Core Version 2.2.0 
+## Kobil Core Version: 2.2.0 
 
 ### Support Versions
-Connector Client plugins: 2.4.0_v1, 2.4.0_v2 
+Connector Client plugins: 2.4.1_v1, 2.4.1_v2 
  
 ### SSMS Version 
 2.x.x supported 
