@@ -22,10 +22,10 @@
  
 ### Changed 
 * Dependencies updated in mIDConnector: 
- - Spring boot version: Old - 2.6.3; Current - 2.6.6 
- - jackson-databind: Old - 2.12.5; Current - 2.13.2.1 
+  - Spring boot version: Old - 2.6.3; Current - 2.6.6 
+  - jackson-databind: Old - 2.12.5; Current - 2.13.2.1 
 * Dependencies updated in KOBIL UI Extension: 
- - Spring boot version: Old - 2.6.3; Current - 2.6.6 
+  - Spring boot version: Old - 2.6.3; Current - 2.6.6 
 
 ## Kobil Core Version: 2.2.0 
 
