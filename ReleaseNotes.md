@@ -31,10 +31,10 @@
 
 ### Note: All these base images will come with less vulnerabilities and only required tools to run the service.
 
-## Kobil Core Version: 2.2.0 
+## Kobil Core Version: 2.2.1 
 
 ### Support Versions
-Connector Client plugins: 2.4.1_v1, 2.4.1_v2 
+Connector Client plugins: 2.4.2_v1, 2.4.2_v2 
  
 ### SSMS Version 
 * 2.x.x supported 
