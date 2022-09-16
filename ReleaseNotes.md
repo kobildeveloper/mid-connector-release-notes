@@ -2,14 +2,14 @@
 
 <br/>
 
-**Date** 2022-09-14
+**Date** 2022-09-16
 
 ### **Docker Download**
 
 ### kobil/kobil-cloud-connector:2.4.2
-**DIGEST:** 
+**DIGEST:** digest: sha256:078ca92de631cfa5945ee57f6939beb394e932c28145b5b91b3ab2d96bac5996
 ### kobil/kobil-cloud-pooler:2.4.2
-**DIGEST:** 
+**DIGEST:** sha256:c2fb58237ddaaab920fcae7f8e73d762a5c421523aa3373c3029011da0e95e03
 
 <br/>
 
@@ -27,7 +27,7 @@
 
 * Updated mpower connector service image version to 1.9.0 which uses the `gitlab.kobil.com:4567/development/devops/base-images/jre8-micro:1.1.0`
 
-* Updated app login service image version to which uses `http://gitlab.kobil.com:4567/development/devops/base-images/nginx-stable-micro:1.3.0`
+* Updated app login service image version to which uses `gitlab.kobil.com:4567/development/devops/base-images/nginx-stable-micro:1.3.0`
 
 ### Note: All these base images will come with less vulnerabilities and only required tools to run the service.
 
