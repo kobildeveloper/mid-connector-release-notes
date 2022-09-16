@@ -7,7 +7,7 @@
 ### **Docker Download**
 
 ### kobil/kobil-cloud-connector:2.4.2
-**DIGEST:** digest: sha256:078ca92de631cfa5945ee57f6939beb394e932c28145b5b91b3ab2d96bac5996
+**DIGEST:** sha256:078ca92de631cfa5945ee57f6939beb394e932c28145b5b91b3ab2d96bac5996
 ### kobil/kobil-cloud-pooler:2.4.2
 **DIGEST:** sha256:c2fb58237ddaaab920fcae7f8e73d762a5c421523aa3373c3029011da0e95e03
 
