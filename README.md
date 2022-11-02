@@ -18,7 +18,7 @@
 - **Pooler:** kobilsystems.azurecr.io/idp/ssms-pooler:3.0.2
 <br/>
 
-------------------------------------
+-----------------------------------
  
 ### Changed 
 * Accommodating pooler related queuing changes and kobil core jar changes
