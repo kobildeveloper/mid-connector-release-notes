@@ -1,29 +1,30 @@
-## mID Connector v2.6.0
+## mID Connector v2.5.0
 
 <br/>
 
-**Date** 2022-11-03
+**Date** 2022-09-29
 
 ### **Docker Download**
 
-### kobil/kobil-cloud-connector:2.6.0
-**DIGEST:** sha256:f45cd4420382f6f4977a9ad6d41d301ff18549dead833aa8b59f5cd3825f7c7b
-### kobil/kobil-cloud-pooler:3.0.3
-**DIGEST:** sha256:2e26af959d693842083348f8107694a44c1a88ffb76224cde31dea49a23b7e49
+### kobil/kobil-cloud-connector:2.5.0
+**DIGEST:** sha256:e32d446e156fc5a991643870460bbf46fd0dce14822878f7a074a389f4283bbe
+### kobil/kobil-cloud-pooler:3.0.2
+**DIGEST:** sha256:3ea37cc02de764c061e41726ec1713cd0a770d368a3fc4ac1cd1649f19d041b7
 
 <br/>
 
 ### **Azurecr Download**
-- **Connector:** kobilsystems.azurecr.io/idp/ssms-connector:2.6.0  
-- **Pooler:** kobilsystems.azurecr.io/idp/ssms-pooler:3.0.3
+- **Connector:** kobilsystems.azurecr.io/idp/ssms-connector:2.5.0  
+- **Pooler:** kobilsystems.azurecr.io/idp/ssms-pooler:3.0.2
 <br/>
 
 ------------------------------------
  
-### Fixed 
-* redis-cluster failover retry with dns instead of IP
+### Changed 
+* Accommodating pooler related queuing changes and kobil core jar changes
 
-## Kobil Core Version: 4.0.0-rc.296100
+
+## Kobil Core Version: 3.0.0-dev.39
 
 ### Support Versions
 Connector Client plugins: 2.4.2_v1, 2.4.2_v2 
