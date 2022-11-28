@@ -9,8 +9,7 @@
 ### kobil/kobil-cloud-connector:2.6.0
 **DIGEST:** sha256:f45cd4420382f6f4977a9ad6d41d301ff18549dead833aa8b59f5cd3825f7c7b
 ### kobil/kobil-cloud-pooler:3.0.3
-**DIGEST:** sha256:2e26af959d693842083348f8107694a44c1a88ffb76224cde31dea49a23b7e49
-
+**DIGEST:** 
 <br/>
 
 ### **Azurecr Download**
