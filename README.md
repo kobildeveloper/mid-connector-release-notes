@@ -2,7 +2,7 @@
 
 <br/>
 
-**Date** 2022-11-18
+**Date** 2022-11-04
 
 ### **Docker Download**
 ### kobil/kobil-cloud-connector:2.7.0
