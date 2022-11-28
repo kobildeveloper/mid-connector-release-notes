@@ -23,7 +23,7 @@
 * Redis cluster failover retry with dns instead of IP.
 
 
-## Kobil Core Version: 
+## Kobil Core Version: 4.0.0-rc.296100
 
 ### Support Versions
 Connector Client plugins: 2.4.2_v1, 2.4.2_v2 
