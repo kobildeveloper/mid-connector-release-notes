@@ -1,22 +1,26 @@
-## mID Connector v4.0.0
+## mID Connector v2.7.0
 
 <br/>
 
 **Date** 2022-11-18
 
 ### **Docker Download**
-### kobil/kobil-cloud-connector:4.0.0
-**DIGEST:** sha256:59e067744505c8508c370082a22bb8967a003ef967c9dd2f33ff953814b62699
+### kobil/kobil-cloud-connector:2.7.0
+**DIGEST:** sha256:8729223e9a0a18b76684d393acdc348d1f08e25a6356b5b952c4b6f5929ec49b
+
 <br/>
 
 ### **Azurecr Download**
-- **Connector:** kobilsystems.azurecr.io/idp/ssms-connector:4.0.0
+- **Connector:** kobilsystems.azurecr.io/idp/ssms-connector:2.7.0
 <br/>
  
+### Changed 
+* ci lib version to 13.10.0
+* gitlab.kobil.com:4567/development/devops/base-images/jre17-micro base image to 1.3.0
+
 ### Added 
-* Added support to retrieve transaction, QR result from redis.
-* Introduced pollfromredis queryparam in transaction and qr API's to take result from redis
-* updated kobil core to 4.0.0
+* labels to dockerfile
+
 
 ## Kobil Core Version: 4.0.0-rc.296100
 
