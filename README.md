@@ -1,12 +1,12 @@
-## mID Connector v2.7.0
+## mID Connector v2.6.0
 
 <br/>
 
-**Date** 2022-11-04
+**Date** 2022-11-03
 
 ### **Docker Download**
 
-### kobil/kobil-cloud-connector:2.7.0
+### kobil/kobil-cloud-connector:2.6.0
 **DIGEST:** 
 ### kobil/kobil-cloud-pooler: 
 **DIGEST:** 
@@ -14,15 +14,14 @@
 <br/>
 
 ### **Azurecr Download**
-- **Connector:** kobilsystems.azurecr.io/idp/ssms-connector:2.7.0  
+- **Connector:** kobilsystems.azurecr.io/idp/ssms-connector:2.6.0  
 - **Pooler:** kobilsystems.azurecr.io/idp/ssms-pooler: 
 <br/>
 
 ------------------------------------
  
-### Changed 
-* ci lib version to 13.10.0
-* gitlab.kobil.com:4567/development/devops/base-images/jre17-micro base image to 1.3.0
+### Fixed 
+* Redis cluster failover retry with dns instead of IP.
 
 
 ## Kobil Core Version: 
