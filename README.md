@@ -7,15 +7,12 @@
 ### **Docker Download**
 
 ### kobil/kobil-cloud-connector:2.7.0
-**DIGEST:** 
-### kobil/kobil-cloud-pooler: 
-**DIGEST:** 
+**DIGEST:** sha256:8729223e9a0a18b76684d393acdc348d1f08e25a6356b5b952c4b6f5929ec49b
 
 <br/>
 
 ### **Azurecr Download**
 - **Connector:** kobilsystems.azurecr.io/idp/ssms-connector:2.7.0  
-- **Pooler:** kobilsystems.azurecr.io/idp/ssms-pooler: 
 <br/>
 
 ------------------------------------
