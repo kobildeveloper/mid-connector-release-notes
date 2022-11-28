@@ -16,9 +16,8 @@
 ### **Azurecr Download**
 - **Connector:** kobilsystems.azurecr.io/idp/ssms-connector:2.6.0
 - **Pooler:** kobilsystems.azurecr.io/idp/ssms-pooler: 3.1.0
-<br/>
 
-------------------------------------
+<br/>
  
 ### Fixed 
 * Redis cluster failover retry with dns instead of IP.
