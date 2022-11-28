@@ -32,7 +32,7 @@ Connector Client plugins: 2.4.2_v1, 2.4.2_v2
  
 ### SSMS Version 
 * 2.x.x supported 
-* 3.x.x supported 
+* 3.x.x supported
 
 ### Tested Server 
 * MultiTenant: 3.4.1.75470 and 3.5.2.79434 
