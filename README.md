@@ -1,24 +1,31 @@
-## mID Connector v4.0.0
+## mID Connector v4.1.0-rc.1
 
 <br/>
 
-**Date** 2022-11-18
+**Date** 2022-11-25
 
 ### **Docker Download**
-### kobil/kobil-cloud-connector:4.0.0
-**DIGEST:** sha256:59e067744505c8508c370082a22bb8967a003ef967c9dd2f33ff953814b62699
+### kobil/kobil-cloud-connector:4.1.0-rc.1
+**DIGEST:** digest: sha256:dbdbc60f4ec57d9fc5c2929b623c2ab0d362aa184ae70435b52e16ba2d3a8104
+
 <br/>
 
 ### **Azurecr Download**
-- **Connector:** kobilsystems.azurecr.io/idp/ssms-connector:4.0.0
+- **Connector:** kobilsystems.azurecr.io/idp/ssms-connector:4.1.0-rc.1
 <br/>
  
 ### Added 
-* Added support to retrieve transaction, QR result from redis.
+* Added support to retrieve transaction, QR result from redis. 
 * Introduced pollfromredis queryparam in transaction and qr API's to take result from redis
-* updated kobil core to 4.0.0
+* Updated kobil core version to 4.0.1
+* Added request param pollfromredis for the  following API’s 
+    - StartTransaction
+    - GetTransactionResult
+    - CreateOnlineQR
+    - VerifyOnlineQR
+    - AddNewDeviceTransaction
 
-## Kobil Core Version: 4.0.0-rc.296100
+## Kobil Core Version: 4.0.1
 
 ### Support Versions
 Connector Client plugins: 2.4.2_v1, 2.4.2_v2 
