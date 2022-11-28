@@ -24,6 +24,9 @@
 * ci lib version to 13.10.0
 * gitlab.kobil.com:4567/development/devops/base-images/jre17-micro base image to 1.3.0
 
+### Added 
+* labels to dockerfile
+
 
 ## Kobil Core Version: 
 
