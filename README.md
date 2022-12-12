@@ -1,34 +1,40 @@
-## mID Connector v4.1.0-rc.1
+## mID Connector v4.1.0
 
 <br/>
 
-**Date** 2022-11-25
+**Date** 2022-12-12
 
 ### **Docker Download**
-### kobil/kobil-cloud-connector:4.1.0-rc.1
-**DIGEST:** digest: sha256:dbdbc60f4ec57d9fc5c2929b623c2ab0d362aa184ae70435b52e16ba2d3a8104
+### kobil/kobil-cloud-connector:4.1.0
+**DIGEST:** digest: 
 
 <br/>
 
 ### **Azurecr Download**
-- **Connector:** kobilsystems.azurecr.io/idp/ssms-connector:4.1.0-rc.1
+- **Connector:** kobilsystems.azurecr.io/idp/ssms-connector:4.1.0
 <br/>
  
 ### Added 
-* Added support to retrieve transaction, QR result from redis. 
-* Introduced pollfromredis queryparam in transaction and qr API's to take result from redis
-* Updated kobil core version to 4.0.1
-* Added request param pollfromredis for the  following API’s 
+* Added support to retrieve transaction, QR result from redis, based on the Environment Variable configuration HANDLE_DEVICE_EVENTS_WITH_REDIS by default the value is configured to false.
+* Added request param pollfromredis for the  following API’s to take result from redis
     - StartTransaction
     - GetTransactionResult
     - CreateOnlineQR
     - VerifyOnlineQR
     - AddNewDeviceTransaction
+* Added support to enable connection pooling on opening a socket connection with SSMS. By default it is disabled which could be enable by setting env variable DISABLE_HTTP_DISCONNECTION to true.
+* Support to expose prometheus metrics.
+* Ping endpoint to check liveliness probe.
+
+## Changed
+* Provided backward compatibility for connector version 2.6.0
+* Updated responses of continuous polling scenario in QR and transaction endpoint based on HANDLE_DEVICE_EVENTS_WITH_REDIS env variable.
+* Changed tomcat version to 9.0.68
 
 ## Kobil Core Version: 4.0.1
 
 ### Support Versions
-Connector Client plugins: 2.4.2_v1, 2.4.2_v2 
+Connector Client plugins: 4.1.0_v1, 4.1.0_v2 
  
 ### SSMS Version 
 * 2.x.x supported 
