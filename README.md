@@ -37,7 +37,6 @@
     - AddNewDeviceTransaction
 * Added support to enable connection pooling on opening a socket connection with SSMS. By default it is disabled which could be enable by setting env variable DISABLE_HTTP_DISCONNECTION to true.
 * Support to expose prometheus metrics.
-* Ping endpoint to check liveliness probe.
 
 
 
