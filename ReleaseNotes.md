@@ -2,7 +2,7 @@
 
 <br/>
 
-**Date** 2022-12-12
+**Date** 2022-12-13
 
 ### **Docker Download**
 ### kobil/kobil-cloud-connector:4.1.0
@@ -15,6 +15,9 @@
 <br/>
  
 ### Added 
+* Sonarqube scan job.
+* Support to expose prometheus metrics.
+* Ping endpoint to provide liveliness probe.
 * Added support to retrieve transaction, QR result from redis, based on the Environment Variable configuration HANDLE_DEVICE_EVENTS_WITH_REDIS by default the value is configured to false.
 * Added request param pollfromredis for the  following API’s to take result from redis
     - StartTransaction
@@ -28,8 +31,11 @@
 
 ## Changed
 * Provided backward compatibility for connector version 2.6.0
-* Updated responses of continuous polling scenario in QR and transaction endpoint based on HANDLE_DEVICE_EVENTS_WITH_REDIS env variable.
+* Updated responses of continuous polling scenario in QR and transaction endpoint based on HANDLE_DEVICE_EVENTS_WITH_REDIS env variable
 * Changed tomcat version to 9.0.68
+* Updated kobilcore version to 4.0.1
+* CI Lib 14.6.2
+ 
 
 ## Kobil Core Version: 4.0.1
 
